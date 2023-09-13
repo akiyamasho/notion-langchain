@@ -2,10 +2,11 @@
 
 ### Requirements
 
+-   Docker
 -   OpenAI API Key ([retrieve here](https://platform.openai.com/account/billing))
 -   Notion Integration + API Key ([setup here](https://www.notion.so/my-integrations))
--   Pages in Notion shared with Notion Integration
--   Docker
+-   Pages in Notion shared with Notion Integration (You can add access by clicking on `...` on the top right of a Notion page and adding the connection to your Notion Integration)
+<img width="504" alt="スクリーンショット 2023-09-13 20 19 20" src="https://github.com/akiyamasho/notion-langchain/assets/35907066/4216e4d2-004b-42c1-8425-418400b7d788">
 
 ### Setup
 
