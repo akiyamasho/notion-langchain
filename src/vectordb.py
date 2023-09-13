@@ -10,12 +10,12 @@ from qdrant_client import QdrantClient
 from qdrant_client.http import models
 
 
-from src.config import OPENAI_API_KEY
+from src.config import OPENAI_API_KEY, QDRANT_HOST
 
 
 @st.cache_resource
 def connect_to_vectorstore():
-    client = QdrantClient(host="localhost", port=6333, path="qdrant_storage")
+    client = QdrantClient(host=QDRANT_HOST, port=6333, path=":memory:")
     try:
         client.get_collection("notion_streamlit")
     except Exception as e:

@@ -42,13 +42,12 @@ def load_chain(_client, api_key: str):
     return chain
 
 
-st.title("Chat With Your Notion Documents!")
-
 vector_store = connect_to_vectorstore()
-with st.sidebar:
+with st.container():
     notion_headers = cache_headers(NOTION_API_KEY)
 
     load_data = st.button("Load Data")
+    placeholder = st.empty()
     if load_data:
         documents = load_notion(notion_headers)
 
@@ -60,8 +59,12 @@ with st.sidebar:
             print(chunk)
 
         load_data_into_vectorstore(vector_store, chunks)
-        print("Documents loaded.")
+        doc_len = len(documents)
+        placeholder.write(
+            f"{doc_len} document{'' if doc_len == 1 else 's'} loaded."
+        )
 
+st.title("Query anything about your Notion documents!")
 chain = load_chain(vector_store, OPENAI_API_KEY)
 
 if "generated" not in st.session_state:
@@ -72,7 +75,7 @@ if "past" not in st.session_state:
 
 
 user_input = st.text_input(
-    "You: ", placeholder="Ask questions about your Notion docs:", key="input"
+    "You: ", placeholder="Input query here", key="input"
 )
 
 if user_input:

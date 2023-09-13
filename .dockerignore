@@ -1,0 +1,7 @@
+Dockerfile
+.dockerignore
+.gitignore
+README.md
+env
+qdrant_storage
+run-qdrant.sh
