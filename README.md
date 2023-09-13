@@ -28,3 +28,9 @@
     streamlit run src/main.py
     ```
 1. Access http://localhost:8501 and click on `Load Data` before running any queries.
+
+### References
+
+This [Medium Blog](https://betterprogramming.pub/build-a-chatbot-for-your-notion-documents-using-langchain-and-openai-e0ad7b903b84) by @htrivedi99 sums it up.
+I simply modularised it and made sure the python package versions fit the code from the time of writing, as most of LangChain and Qdrant have had breaking changes since then.
+Also fixed an issue with Qdrant having errors with multiple workers.
