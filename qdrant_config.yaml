@@ -1,0 +1,2 @@
+service:
+  max_workers: 1
