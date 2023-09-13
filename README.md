@@ -9,23 +9,21 @@
 
 ### Setup
 
+1. Install the requirements
+   ```bash
+   pip install requirements.txt
+   ```
 1. Create a `.env` file with your OpenAI API Key and Notion Integration API Key:
-
-```env
-OPENAI_API_KEY=<your OpenAPI API key>
-NOTION_API_KEY=<your Notion Integration API key>
-```
-
-2. Run the Qdrant docker container
-
-```bash
-./run_qdrant.sh
-```
-
-3. Run the StreamLit app
-
-```bash
-streamlit run src/main.py
-```
-
-4. Access http://localhost:8501 and click on `Load Data` before running any queries.
+    ```env
+    OPENAI_API_KEY=<your OpenAPI API key>
+    NOTION_API_KEY=<your Notion Integration API key>
+    ```
+1. Run the Qdrant docker container
+    ```bash
+    ./run_qdrant.sh
+    ```
+1. Run the StreamLit app
+    ```bash
+    streamlit run src/main.py
+    ```
+1. Access http://localhost:8501 and click on `Load Data` before running any queries.
