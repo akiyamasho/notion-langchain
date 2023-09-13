@@ -24,6 +24,6 @@
 
 ### References
 
-This [Medium Blog](https://betterprogramming.pub/build-a-chatbot-for-your-notion-documents-using-langchain-and-openai-e0ad7b903b84) by @htrivedi99 sums it up.
+This [Medium Blog](https://betterprogramming.pub/build-a-chatbot-for-your-notion-documents-using-langchain-and-openai-e0ad7b903b84) by [@htrivedi99](https://github.com/htrivedi99) sums it up.
 I simply modularised it and made sure the python package versions fit the code from the time of writing, as most of LangChain and Qdrant have had breaking changes since then.
 Also fixed an issue with Qdrant having errors with multiple workers.
