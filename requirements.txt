@@ -1,0 +1,11 @@
+requests==2.31.0
+langchain==0.0.147
+streamlit==1.26.0
+tiktoken==0.4.0
+qdrant-client==1.2.0
+streamlit-chat==0.0.2.2
+python-dotenv==1.0.0
+black==23.9.1
+flake8==6.1.0
+autoflake==2.2.1
+openai==0.28.0
